@@ -8,16 +8,16 @@ namespace Day6LogicalPrograms
 {
     internal class FibonoccieSeries
     {
-        public static void FibonoccieNumber(int n) //5
+        public static void FibonoccieNumber(int number) //5
         {
             int num1 = 0;
             int num2 = 1;
             int sum = 0;
-            if(n == 1)
+            if(number == 1)
             {
                 Console.Write("{0}", num1);
             }
-            else if(n == 2)
+            else if(number == 2)
             {
                 Console.Write("{0} {1}", num1, num2);
             }
@@ -25,7 +25,7 @@ namespace Day6LogicalPrograms
             {
                 Console.Write("{0} {1}", num1, num2);
             }
-            for(int i=3; i<=n; i++)
+            for(int i=3; i<=number; i++)
             {
                 sum = num1 + num2;
                 Console.Write(" {0}", sum);
