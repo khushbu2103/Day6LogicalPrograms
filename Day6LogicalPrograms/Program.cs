@@ -12,7 +12,7 @@ namespace Day6LogicalPrograms
         {
             Console.WriteLine("Welcome to the logical programs");
             Console.WriteLine("Choose any one program");
-            Console.WriteLine("1.Fibonoccie Series\n2.Perfact Number");
+            Console.WriteLine("1.Fibonoccie Series\n2.Perfact Number\n3.Prime Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -30,12 +30,19 @@ namespace Day6LogicalPrograms
                         PerfactNumber.Factors_Addition(n);
                         break;
                     }
+                case 3:
+                    {
+                        Console.WriteLine("please enter eny number");
+                        int n = Convert.ToInt32(Console.ReadLine());
+                        PrimeNumber.PrimeNumberCalculation(n);
+                        break;
+                    }
                 default:
                     {
                         Console.WriteLine("please choose existing program");
                         break;
                     }
-                    Console.ReadLine();
+                    
             }
             
             
