@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CouponNumber.cs" />
     <Compile Include="FibonoccieSeries.cs" />
     <Compile Include="PerfactNumber.cs" />
     <Compile Include="PrimeNumber.cs" />

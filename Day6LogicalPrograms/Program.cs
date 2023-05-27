@@ -12,7 +12,13 @@ namespace Day6LogicalPrograms
         {
             Console.WriteLine("Welcome to the logical programs");
             Console.WriteLine("Choose any one program");
-            Console.WriteLine("1.Fibonoccie Series\n2.Perfact Number\n3.Prime Number\n4.Reverse Number");
+            
+            
+            Console.WriteLine("1.Fibonoccie Series\n" +
+                "2.Perfact Number\n" +
+                "3.Prime Number\n" +
+                "4.Reverse Number\n" +
+                "5.Coupon Number\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -42,6 +48,13 @@ namespace Day6LogicalPrograms
                         Console.WriteLine("please enter eny number");
                         int num = Convert.ToInt32(Console.ReadLine());
                        ReverseNumber.ReverseNumberCalculation(num);
+                        break;
+                    }
+                case 5:
+                    {
+                        Console.WriteLine("please enter a number");
+              
+                        CouponNumber.GenerateCouponNumber();
                         break;
                     }
                 default:
