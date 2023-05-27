@@ -18,7 +18,8 @@ namespace Day6LogicalPrograms
                 "2.Perfact Number\n" +
                 "3.Prime Number\n" +
                 "4.Reverse Number\n" +
-                "5.Coupon Number\n");
+                "5.Coupon Number\n" +
+                "6.Stopwatch");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -55,6 +56,11 @@ namespace Day6LogicalPrograms
                         Console.WriteLine("please enter a number");
               
                         CouponNumber.GenerateCouponNumber();
+                        break;
+                    }
+                case 6:
+                    {
+                        StopwatchCalculation.TimeElapseCalulation();
                         break;
                     }
                 default:
